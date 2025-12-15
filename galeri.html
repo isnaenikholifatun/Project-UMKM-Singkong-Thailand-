@@ -1,0 +1,200 @@
+<!DOCTYPE html> 
+<html lang="id"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Galeri - Singkong Thailand</title> 
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css"> 
+
+</head> 
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-brown-custom sticky-top"> 
+  <div class="container"> 
+        <a class="navbar-brand" href="#"> 
+            <img src="images/logo.png" alt="Logo UMKM" width="50" height="50"/>
+        </a> 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> 
+            <span class="navbar-toggler-icon"></span> 
+        </button> 
+    <div class="collapse navbar-collapse" id="navbarNav"> 
+      <ul class="navbar-nav ms-auto"> 
+        <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li> 
+        <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang Kami</a></li> 
+        <li class="nav-item"><a class="nav-link" href="produk.html">Produk</a></li> 
+        <li class="nav-item"><a class="nav-link active" href="galeri.html">Galeri</a></li> 
+        <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li> 
+      </ul> 
+    </div> 
+  </div> 
+</nav>
+
+<header class="hero">
+    <div class="container"> 
+        <h1 class="mb-0 fw-bold text-warning">Galeri Produksi</h1> 
+        <p class="mt-2 text-light fw-bold">Intip dapur kami dari singkong segar hingga siap saji.</p>
+    </div> 
+</header> 
+  
+<main class="container my-5">
+    
+    <!-- <div class="row justify-content-center mb-4">
+        <div class="col-md-6">
+            <div class="input-group shadow-sm">
+                <span class="input-group-text bg-white"><i class="bi bi-search text-warning"></i></span>
+                <input type="text" id="searchGallery" class="form-control" placeholder="Cari proses (misal: rebus, kemasan)...">
+            </div>
+        </div>
+    </div> -->
+
+    <div class="row g-4" id="galleryContainer">
+      
+      <div class="col-md-4 col-sm-6 gallery-item">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="position-relative">
+                <img src="images/pengupasan singkong.jpg" alt="Proses Pengupasan" class="card-img-top gallery-img">
+                <span class="position-absolute top-0 start-0 badge bg-warning text-dark m-2">Langkah 1</span>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title text-brown fw-bold">Pengupasan</h5>
+                <p class="card-text small text-muted">Proses pengupasan singkong pilihan secara higienis dan teliti.</p>
+            </div>
+          </div>
+      </div> 
+
+      <div class="col-md-4 col-sm-6 gallery-item">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="position-relative">
+              <img src="images/singkong potong.png" alt="Pemotongan Singkong" class="card-img-top gallery-img">
+              <span class="position-absolute top-0 start-0 badge bg-warning text-dark m-2">Langkah 2</span>
+          </div>
+          <div class="card-body">
+              <h5 class="card-title text-brown fw-bold">Pemotongan</h5>
+              <p class="card-text small text-muted">Singkong dipotong dengan ukuran presisi agar matang merata.</p>
+          </div>
+        </div>
+      </div> 
+
+      <div class="col-md-4 col-sm-6 gallery-item">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="position-relative">
+              <img src="images/perebusan singkong.png" alt="Perebusan Singkong" class="card-img-top gallery-img">
+              <span class="position-absolute top-0 start-0 badge bg-warning text-dark m-2">Langkah 3</span>
+          </div>
+          <div class="card-body">
+              <h5 class="card-title text-brown fw-bold">Perebusan</h5>
+              <p class="card-text small text-muted">Perebusan dengan suhu terkontrol hingga tekstur singkong lembut.</p>
+          </div>
+        </div>
+      </div> 
+
+      <div class="col-md-4 col-sm-6 gallery-item">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="position-relative">
+              <img src="images/singkong pandan.png" alt="Pemasakan Santan" class="card-img-top gallery-img">
+              <span class="position-absolute top-0 start-0 badge bg-warning text-dark m-2">Langkah 4</span>
+          </div>
+          <div class="card-body">
+              <h5 class="card-title text-brown fw-bold">Pemasakan Santan</h5>
+              <p class="card-text small text-muted">Dimasak dengan santan kental dan daun pandan wangi.</p>
+          </div>
+        </div>
+      </div> 
+
+      <div class="col-md-4 col-sm-6 gallery-item">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="position-relative">
+              <img src="images/toping campur.jpg" alt="Penyajian Topping" class="card-img-top gallery-img">
+              <span class="position-absolute top-0 start-0 badge bg-warning text-dark m-2">Langkah 5</span>
+          </div>
+          <div class="card-body">
+              <h5 class="card-title text-brown fw-bold">Penyajian Topping</h5>
+              <p class="card-text small text-muted">Pemberian topping melimpah (Keju, Cokelat, dll) sesuai selera.</p>
+          </div>
+        </div>
+      </div> 
+
+      <div class="col-md-4 col-sm-6 gallery-item">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="position-relative">
+              <img src="images/Kemasan.png" alt="Pengemasan Produk" class="card-img-top gallery-img">
+              <span class="position-absolute top-0 start-0 badge bg-success text-white m-2">Final</span>
+          </div>
+          <div class="card-body">
+              <h5 class="card-title text-brown fw-bold">Pengemasan</h5>
+              <p class="card-text small text-muted">Dikemas dalam wadah food-grade agar aman dan higienis.</p>
+          </div>
+        </div>
+      </div> 
+
+    </div> 
+</main> 
+  
+<footer> 
+    <p>&copy; 2025 Singkong Thailand. Semua hak dilindungi.</p> 
+</footer>
+
+<div class="modal fade" id="modalPreview" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered"> 
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title" id="judulModal">Detail Foto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center p-0">
+                <img src="" id="imgFull" class="img-fluid" style="width: 100%; max-height: 80vh; object-fit: contain;">
+            </div>
+            <div class="modal-footer border-0">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        
+        // --- EVENT JQUERY 1: Hover Effect ---
+        $(".card").hover(
+            function() {
+                $(this).addClass("shadow-lg");
+            },
+            function() {
+                $(this).removeClass("shadow-lg");
+            }
+        );
+
+        // --- EVENT JQUERY 2: Klik Gambar (Tampilkan Modal Full) ---
+        $(".gallery-img").click(function(){
+            // 1. Ambil source (link) gambar yang diklik
+            var srcGambar = $(this).attr("src");
+            // 2. Ambil judul gambar dari atribut alt
+            var judulGambar = $(this).attr("alt");
+
+            // 3. Masukkan ke dalam elemen Modal
+            $("#imgFull").attr("src", srcGambar);
+            $("#judulModal").text(judulGambar);
+
+            // 4. Tampilkan Modal secara manual lewat jQuery
+            $("#modalPreview").modal('show');
+        });
+
+        // // --- EVENT JQUERY 3: Live Search (Filter) ---
+        // $("#searchGallery").on("keyup", function() {
+        //     var value = $(this).val().toLowerCase();
+        //     $("#galleryContainer .gallery-item").filter(function() {
+        //         $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        //     });
+        // });
+
+    });
+</script>
+
+</body> 
+</html>

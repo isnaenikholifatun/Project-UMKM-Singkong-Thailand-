@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Kontak Kami - Singkong Thailand</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-brown-custom sticky-top"> 
+  <div class="container"> 
+        <a class="navbar-brand" href="#"> 
+            <img src="images/logo.png" alt="Logo" width="50" height="50"/>
+        </a> 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> 
+            <span class="navbar-toggler-icon"></span> 
+        </button> 
+    <div class="collapse navbar-collapse" id="navbarNav"> 
+      <ul class="navbar-nav ms-auto"> 
+        <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li> 
+        <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang Kami</a></li> 
+        <li class="nav-item"><a class="nav-link" href="produk.html">Produk</a></li> 
+        <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li> 
+        <li class="nav-item"><a class="nav-link active" href="kontak.html">Kontak</a></li> 
+      </ul> 
+    </div> 
+  </div> 
+</nav>
+
+<header class="hero">
+    <div class="container"> 
+        <h1 class="mb-0 fw-bold text-warning">Hubungi Kami</h1> 
+        <p class="mt-2 text-light fw-bold">Kami siap mendengar masukan dan pesanan Anda.</p>
+    </div> 
+</header> 
+    
+<main class="container my-5">
+    <div class="row g-5">
+        
+        <div class="col-lg-5 order-2 order-lg-1">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body p-4">
+                    <h3 class="text-brown mb-4 fw-bold">📍 Lokasi & Kontak</h3>
+                    
+                    <div class="info-item">
+                        <i class="bi bi-geo-alt-fill contact-icon"></i>
+                        <div>
+                            <h6 class="fw-bold mb-0">Alamat:</h6>
+                            <p class="mb-0 text-muted small">Jl. Singkong Raya No. 12, Jakarta Selatan</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="bi bi-whatsapp contact-icon"></i>
+                        <div>
+                            <h6 class="fw-bold mb-0">WhatsApp:</h6>
+                            <p class="mb-0 text-muted small">+62 857-1236-8923</p>
+                        </div>
+                    </div>
+
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-7 order-1 order-lg-2">
+            <div class="card shadow border-0" style="background-color: #fffaf0;">
+                <div class="card-body p-5">
+                    <h3 class="mb-4 text-center fw-bold" style="color: #3f2301;">Kirim Pesan</h3>
+                    
+                    <div id="alert-sukses" class="alert alert-success d-none alert-dismissible fade show">
+                        <i class="bi bi-check-circle-fill me-2"></i> <strong>Berhasil!</strong> Pesan Anda telah terkirim.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    </div>
+
+                    <div id="alert-error" class="alert alert-danger d-none alert-dismissible fade show">
+                        <i class="bi bi-exclamation-triangle-fill me-2"></i> Mohon perbaiki kesalahan pada formulir.
+                    </div>
+
+                    <form id="formKontak" novalidate>
+                        
+                        <div class="mb-3">
+                            <label for="nama" class="form-label fw-bold">Nama Lengkap</label>
+                            <div class="input-group has-validation">
+                                <span class="input-group-text bg-white"><i class="bi bi-person"></i></span>
+                                <input type="text" class="form-control" id="nama" placeholder="Masukkan nama Anda">
+                                <div class="invalid-feedback">Nama wajib diisi!</div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label fw-bold">Email</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text bg-white"><i class="bi bi-envelope"></i></span>
+                                    <input type="email" class="form-control" id="email" placeholder="email@contoh.com">
+                                    <div class="invalid-feedback">Email tidak valid / kosong!</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="hp" class="form-label fw-bold">Nomor WhatsApp</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text bg-white"><i class="bi bi-whatsapp"></i></span>
+                                    <input type="text" class="form-control" id="hp" placeholder="08xxxxxxxx">
+                                    <div class="invalid-feedback" id="error-hp">Nomor WA wajib diisi!</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="pesan" class="form-label fw-bold">Isi Pesan</label>
+                            <textarea class="form-control" id="pesan" rows="4" placeholder="Tulis pesan..."></textarea>
+                            <div class="invalid-feedback">Pesan tidak boleh kosong!</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="file" class="form-label fw-bold">Lampiran (Opsional)</label>
+                            <input type="file" class="form-control" id="file">
+                        </div>
+
+                        <div class="mb-4 form-check">
+                            <input type="checkbox" class="form-check-input" id="langganan" value="ya">
+                            <label class="form-check-label" for="langganan">Saya ingin menerima info promo.</label>
+                        </div>
+
+                        <div class="d-flex gap-2">
+                            <button type="submit" class="btn btn-primary flex-grow-1" style="background: linear-gradient(to right, #532a10, #a4642a); border: none;">
+                                <i class="bi bi-send-fill"></i> Kirim Pesan
+                            </button>
+                            <button type="button" id="clearBtn" class="btn btn-outline-secondary">
+                                <i class="bi bi-trash"></i> Reset
+                            </button>
+                        </div>
+
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>© 2025 Singkong Thailand. Semua hak dilindungi.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 
+
+<script>
+    $(document).ready(function() {
+        
+        // --- 1. VALIDASI SAAT SUBMIT ---
+        $("#formKontak").submit(function(e) {
+            e.preventDefault(); // Mencegah reload
+            
+            // Ambil value
+            var nama = $("#nama").val().trim();
+            var email = $("#email").val().trim();
+            var hp = $("#hp").val().trim();
+            var pesan = $("#pesan").val().trim();
+            
+            var isValid = true; // Status validasi awal
+
+            // Reset gaya error sebelumnya
+            $(".form-control").removeClass("is-invalid");
+
+            // Cek Nama
+            if (nama === "") {
+                $("#nama").addClass("is-invalid");
+                isValid = false;
+            }
+
+            // Cek Email
+            if (email === "") {
+                $("#email").addClass("is-invalid");
+                isValid = false;
+            }
+
+            // Cek HP (Harus Angka & Minimal 10 digit)
+            // Regex /^\d+$/ artinya hanya boleh angka 0-9
+            if (hp === "") {
+                $("#hp").addClass("is-invalid");
+                $("#error-hp").text("Nomor WA wajib diisi!");
+                isValid = false;
+            } else if (!/^\d+$/.test(hp)) {
+                $("#hp").addClass("is-invalid");
+                $("#error-hp").text("Nomor WA harus berupa angka!"); // Peringatan khusus
+                isValid = false;
+            } else if (hp.length < 10) {
+                $("#hp").addClass("is-invalid");
+                $("#error-hp").text("Nomor WA terlalu pendek (min 10 digit)!");
+                isValid = false;
+            }
+
+            // Cek Pesan
+            if (pesan === "") {
+                $("#pesan").addClass("is-invalid");
+                isValid = false;
+            }
+
+            // KEPUTUSAN AKHIR
+            if (isValid) {
+                // Jika semua benar
+                $("#alert-error").addClass("d-none");
+                
+                // Efek Loading Tombol
+                var btn = $(this).find("button[type='submit']");
+                var textAsli = btn.html();
+                btn.html('<span class="spinner-border spinner-border-sm"></span> Mengirim...');
+                btn.prop("disabled", true);
+
+                setTimeout(function(){
+                    $("#alert-sukses").removeClass("d-none").hide().fadeIn();
+                    $("#formKontak")[0].reset();
+                    $(".form-control").removeClass("is-invalid");
+                    
+                    btn.html(textAsli);
+                    btn.prop("disabled", false);
+                    $('html, body').animate({scrollTop: $("#alert-sukses").offset().top - 100}, 500);
+                }, 1000);
+
+            } else {
+                // Jika ada yang salah
+                $("#alert-error").removeClass("d-none").hide().fadeIn();
+                $("#alert-sukses").addClass("d-none");
+            }
+        });
+
+        // --- 2. HAPUS ERROR SAAT MENGETIK ---
+        $(".form-control").on("input", function() {
+            if ($(this).val() !== "") {
+                $(this).removeClass("is-invalid");
+            }
+        });
+
+        // --- 3. TOMBOL RESET ---
+        $("#clearBtn").click(function() {
+            $("#formKontak")[0].reset();
+            $(".form-control").removeClass("is-invalid");
+            $("#alert-sukses, #alert-error").addClass("d-none");
+        });
+    });
+</script>
+
+</body>
+</html>

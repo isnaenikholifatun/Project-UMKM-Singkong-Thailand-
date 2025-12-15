@@ -1,0 +1,138 @@
+/* --- GAYA UMUM --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fce4ec;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* --- NAVBAR CUSTOM --- */
+.bg-brown-custom {
+    background-color: #3f2301 !important;
+    border-bottom: 1px solid #eee;
+}
+
+nav ul li a {
+    color: rgb(221, 220, 220) !important;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #ffffff33;
+    color: #de9e4c !important;
+    border-radius: 5px;
+}
+
+/* --- HERO SECTION --- */
+header.hero {
+    background-color: #c26868c9;
+    color: rgb(233, 226, 226);
+    padding: 100px 0; /* Padding besar agar lega */
+    text-align: center;
+    
+}
+
+.header {
+    color: #e7c767 !important;
+}
+
+/* Animasi Judul */
+h1, h2 {
+    animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- FITUR LIST (Kotak-kotak keunggulan) --- */
+.fitur-list {
+    list-style: none;
+    padding: 0;
+}
+
+.fitur-list li {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #f07777, #602a11);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-size: 1.1rem;
+}
+
+/* --- TESTIMONI SCROLL (Tetap butuh CSS ini karena Bootstrap tidak punya horizontal scroll card) --- */
+.testimoni-grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fce4ec;
+    border-radius: 10px;
+    scroll-behavior: smooth;
+}
+
+/* Hilangkan scrollbar jelek */
+.testimoni-grid::-webkit-scrollbar { height: 8px; }
+.testimoni-grid::-webkit-scrollbar-thumb { background-color: #a4642a; border-radius: 4px; }
+
+.testimoni-card {
+    min-width: 280px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #de9e4c;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: #432406;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+/* CSS Khusus Halaman Galeri */
+.gallery-img {
+    height: 250px;
+    object-fit: cover;
+    cursor: pointer; /* Menunjukkan gambar bisa diklik */
+    transition: transform 0.3s ease;
+}
+
+/* Efek Hover: Gambar membesar sedikit */
+.card:hover .gallery-img {
+    transform: scale(1.05);
+}
+
+.card {
+    overflow: hidden; /* Agar zoom tidak keluar kotak card */
+}
+
+/* CSS Tambahan untuk Kontak */
+.contact-icon {
+    font-size: 2rem;
+    color: #a4642a;
+    margin-right: 15px;
+}
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+font-size: 2rem;
+color: #a4642a;
+margin-right: 15px;
+}
+        
+.info-item {
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+}
