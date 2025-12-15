@@ -5,4 +5,3 @@ Beranda
 Tentang
 Produk 
 Galeri
-Kontak
